@@ -1,0 +1,53 @@
+export default class Rules {
+    static rules: {
+        custom: typeof import("./rules/Custom").default;
+        date: typeof import("./rules/Date").default;
+        day: typeof import("./rules/Day").default;
+        email: typeof import("./rules/Email").default;
+        json: typeof import("./rules/JSON").default;
+        mask: typeof import("./rules/Mask").default;
+        max: typeof import("./rules/Max").default;
+        maxDate: typeof import("./rules/MaxDate").default;
+        maxLength: typeof import("./rules/MaxLength").default;
+        maxWords: typeof import("./rules/MaxWords").default;
+        min: typeof import("./rules/Min").default;
+        minDate: typeof import("./rules/MinDate").default;
+        minLength: typeof import("./rules/MinLength").default;
+        minWords: typeof import("./rules/MinWords").default;
+        pattern: typeof import("./rules/Pattern").default;
+        required: typeof import("./rules/Required").default;
+        select: typeof import("./rules/Select").default;
+        unique: typeof import("./rules/Unique").default;
+        url: typeof import("./rules/Url").default;
+        minYear: typeof import("./rules/MinYear").default;
+        maxYear: typeof import("./rules/MaxYear").default;
+        time: typeof import("./rules/Time").default;
+    };
+    static addRule(name: any, rule: any): void;
+    static addRules(rules: any): void;
+    static getRule(name: any): any;
+    static getRules(): {
+        custom: typeof import("./rules/Custom").default;
+        date: typeof import("./rules/Date").default;
+        day: typeof import("./rules/Day").default;
+        email: typeof import("./rules/Email").default;
+        json: typeof import("./rules/JSON").default;
+        mask: typeof import("./rules/Mask").default;
+        max: typeof import("./rules/Max").default;
+        maxDate: typeof import("./rules/MaxDate").default;
+        maxLength: typeof import("./rules/MaxLength").default;
+        maxWords: typeof import("./rules/MaxWords").default;
+        min: typeof import("./rules/Min").default;
+        minDate: typeof import("./rules/MinDate").default;
+        minLength: typeof import("./rules/MinLength").default;
+        minWords: typeof import("./rules/MinWords").default;
+        pattern: typeof import("./rules/Pattern").default;
+        required: typeof import("./rules/Required").default;
+        select: typeof import("./rules/Select").default;
+        unique: typeof import("./rules/Unique").default;
+        url: typeof import("./rules/Url").default;
+        minYear: typeof import("./rules/MinYear").default;
+        maxYear: typeof import("./rules/MaxYear").default;
+        time: typeof import("./rules/Time").default;
+    };
+}

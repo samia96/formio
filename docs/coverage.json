@@ -1,0 +1,1720 @@
+{
+  "coverage": "4.27%",
+  "expectCount": 818,
+  "actualCount": 35,
+  "files": {
+    "src/CDN.js": {
+      "expectCount": 14,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        27,
+        32,
+        38,
+        44,
+        50,
+        56,
+        61,
+        72,
+        75
+      ]
+    },
+    "src/Embed.js": {
+      "expectCount": 33,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        17,
+        23,
+        29,
+        38,
+        49,
+        79,
+        94,
+        136,
+        145,
+        257,
+        289,
+        306,
+        307,
+        308,
+        309,
+        310,
+        312,
+        319,
+        321,
+        328,
+        332,
+        342,
+        343
+      ]
+    },
+    "src/EventEmitter.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        17,
+        25,
+        29
+      ]
+    },
+    "src/Form.js": {
+      "expectCount": 28,
+      "actualCount": 7,
+      "undocumentLines": [
+        7,
+        36,
+        37,
+        38,
+        41,
+        46,
+        47,
+        66,
+        69,
+        82,
+        90,
+        142,
+        164,
+        190,
+        217,
+        250,
+        258,
+        294,
+        331,
+        342,
+        357
+      ]
+    },
+    "src/FormBuilder.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        7,
+        17
+      ]
+    },
+    "src/Formio.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        42,
+        69
+      ]
+    },
+    "src/Formio.unit.js": {
+      "expectCount": 10,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        10,
+        11,
+        16,
+        17,
+        18,
+        19,
+        21,
+        25
+      ]
+    },
+    "src/addons/FormioAddon.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        15,
+        19,
+        23,
+        25,
+        26,
+        27,
+        30,
+        31,
+        35
+      ]
+    },
+    "src/addons/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/builders/Builders.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        13,
+        17,
+        21,
+        25
+      ]
+    },
+    "src/components/Components.js": {
+      "expectCount": 13,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        8,
+        10,
+        14,
+        18,
+        22,
+        26,
+        32,
+        39,
+        51,
+        55,
+        59
+      ]
+    },
+    "src/components/_classes/component/Component.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        12
+      ]
+    },
+    "src/components/_classes/component/editForm/utils.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/components/_classes/list/ListComponent.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/_classes/multivalue/Multivalue.js": {
+      "expectCount": 19,
+      "actualCount": 3,
+      "undocumentLines": [
+        4,
+        5,
+        14,
+        18,
+        33,
+        37,
+        41,
+        67,
+        71,
+        79,
+        118,
+        218,
+        222,
+        224,
+        234,
+        246
+      ]
+    },
+    "src/components/_classes/nested/NestedComponent.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/components/_classes/nested/NestedComponent.unit.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        12
+      ]
+    },
+    "src/components/_classes/nestedarray/NestedArrayComponent.unit.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/_classes/nesteddata/NestedDataComponent.unit.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/address/Address.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/button/Button.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/checkbox/Checkbox.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/checkbox/Checkbox.js": {
+      "expectCount": 26,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        19,
+        30,
+        34,
+        53,
+        68,
+        72,
+        83,
+        87,
+        102,
+        108,
+        116,
+        118,
+        128,
+        135,
+        139,
+        143,
+        147,
+        154,
+        164,
+        171,
+        204,
+        218,
+        228,
+        233
+      ]
+    },
+    "src/components/columns/Columns.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/container/Container.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/container/Container.js": {
+      "expectCount": 15,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        9,
+        22,
+        34,
+        36,
+        39,
+        43,
+        47,
+        51,
+        55,
+        59,
+        63,
+        74,
+        78,
+        85
+      ]
+    },
+    "src/components/content/Content.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/currency/Currency.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/currency/Currency.js": {
+      "expectCount": 17,
+      "actualCount": 1,
+      "undocumentLines": [
+        7,
+        8,
+        16,
+        27,
+        48,
+        49,
+        61,
+        65,
+        93,
+        97,
+        101,
+        105,
+        139,
+        153,
+        161,
+        187
+      ]
+    },
+    "src/components/datagrid/DataGrid.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/datamap/DataMap.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/datetime/DateTime.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        8
+      ]
+    },
+    "src/components/datetime/DateTime.js": {
+      "expectCount": 17,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        46,
+        57,
+        61,
+        74,
+        80,
+        148,
+        152,
+        161,
+        165,
+        169,
+        176,
+        181,
+        186,
+        190,
+        201
+      ]
+    },
+    "src/components/day/Day.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "src/components/editgrid/EditGrid.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "src/components/email/Email.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/email/Email.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        16,
+        27,
+        32,
+        36,
+        42
+      ]
+    },
+    "src/components/fieldset/Fieldset.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/components/fieldset/Fieldset.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        16,
+        28,
+        32,
+        36,
+        40,
+        44,
+        46
+      ]
+    },
+    "src/components/file/File.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "src/components/form/Form.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/hidden/Hidden.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/hidden/Hidden.js": {
+      "expectCount": 11,
+      "actualCount": 1,
+      "undocumentLines": [
+        3,
+        4,
+        12,
+        24,
+        28,
+        36,
+        50,
+        54,
+        58,
+        62
+      ]
+    },
+    "src/components/html/HTML.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/html/HTML.js": {
+      "expectCount": 11,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        17,
+        29,
+        33,
+        37,
+        59,
+        63,
+        72,
+        93,
+        97
+      ]
+    },
+    "src/components/number/Number.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "src/components/panel/Panel.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/panel/editForm/Panel.edit.conditional.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        9,
+        10,
+        16,
+        20
+      ]
+    },
+    "src/components/password/Password.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "src/components/password/Password.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        15,
+        26,
+        30,
+        36
+      ]
+    },
+    "src/components/phonenumber/PhoneNumber.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/radio/Radio.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/recaptcha/ReCaptcha.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/recaptcha/ReCaptcha.js": {
+      "expectCount": 17,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        16,
+        27,
+        31,
+        32,
+        41,
+        50,
+        58,
+        62,
+        66,
+        77,
+        81,
+        112,
+        120,
+        125,
+        154
+      ]
+    },
+    "src/components/resource/Resource.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/resource/Resource.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        16,
+        26,
+        34
+      ]
+    },
+    "src/components/select/Select.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/select/fixtures/comp3.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        17
+      ]
+    },
+    "src/components/selectboxes/SelectBoxes.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/components/signature/Signature.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/survey/Survey.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/table/Table.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/table/Table.js": {
+      "expectCount": 18,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        18,
+        38,
+        50,
+        54,
+        58,
+        79,
+        87,
+        95,
+        99,
+        107,
+        109,
+        112,
+        125,
+        159,
+        172,
+        187
+      ]
+    },
+    "src/components/tabs/Tabs.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/tabs/Tabs.js": {
+      "expectCount": 23,
+      "actualCount": 1,
+      "undocumentLines": [
+        4,
+        5,
+        24,
+        36,
+        40,
+        44,
+        56,
+        60,
+        64,
+        68,
+        70,
+        71,
+        74,
+        75,
+        76,
+        89,
+        105,
+        128,
+        172,
+        184,
+        203,
+        222
+      ]
+    },
+    "src/components/tags/Tags.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/tags/Tags.js": {
+      "expectCount": 20,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        17,
+        28,
+        32,
+        39,
+        45,
+        49,
+        53,
+        57,
+        65,
+        69,
+        87,
+        127,
+        135,
+        145,
+        161,
+        174,
+        178,
+        184
+      ]
+    },
+    "src/components/textarea/TextArea.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/textfield/TextField.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "src/components/time/Time.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "src/components/time/Time.js": {
+      "expectCount": 25,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        7,
+        8,
+        19,
+        31,
+        38,
+        41,
+        48,
+        59,
+        63,
+        67,
+        80,
+        87,
+        93,
+        97,
+        101,
+        106,
+        115,
+        124,
+        133,
+        149,
+        154,
+        158,
+        165,
+        176
+      ]
+    },
+    "src/components/unknown/Unknown.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/components/unknown/Unknown.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        13,
+        24
+      ]
+    },
+    "src/components/url/Url.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        7
+      ]
+    },
+    "src/components/url/Url.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        13,
+        24,
+        29,
+        33
+      ]
+    },
+    "src/components/well/Well.form.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "src/components/well/Well.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        14,
+        26,
+        30,
+        34,
+        38,
+        42,
+        44
+      ]
+    },
+    "src/displays/Displays.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        6,
+        7,
+        13,
+        17,
+        21,
+        25
+      ]
+    },
+    "src/formio.embed.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "src/formio.form.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        131
+      ]
+    },
+    "src/licenses/Licenses.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        10,
+        14,
+        18
+      ]
+    },
+    "src/providers/Providers.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        14,
+        19,
+        23,
+        29
+      ]
+    },
+    "src/providers/address/AddressProvider.js": {
+      "expectCount": 16,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        10,
+        14,
+        16,
+        19,
+        23,
+        27,
+        31,
+        35,
+        39,
+        43,
+        48,
+        52,
+        58,
+        67
+      ]
+    },
+    "src/providers/address/AzureAddressProvider.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12,
+        21,
+        25,
+        29
+      ]
+    },
+    "src/providers/address/CustomAddressProvider.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24
+      ]
+    },
+    "src/providers/address/NominatimAddressProvider.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12,
+        21,
+        25,
+        29
+      ]
+    },
+    "src/providers/processor/fileProcessor.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/providers/storage/azure.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/providers/storage/base64.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/providers/storage/dropbox.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/providers/storage/googleDrive.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/providers/storage/indexeddb.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        2
+      ]
+    },
+    "src/providers/storage/s3.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5
+      ]
+    },
+    "src/providers/storage/uploadAdapter.js": {
+      "expectCount": 9,
+      "actualCount": 1,
+      "undocumentLines": [
+        7,
+        8,
+        9,
+        10,
+        13,
+        48,
+        50,
+        58
+      ]
+    },
+    "src/providers/storage/url.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/providers/storage/util.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/providers/storage/xhr.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        17
+      ]
+    },
+    "src/templates/Templates.js": {
+      "expectCount": 10,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        12,
+        16,
+        20,
+        24,
+        29,
+        37,
+        41,
+        48
+      ]
+    },
+    "src/templates/Templates.unit.js": {
+      "expectCount": 10,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        13
+      ]
+    },
+    "src/utils/ChoicesWrapper.js": {
+      "expectCount": 19,
+      "actualCount": 1,
+      "undocumentLines": [
+        35,
+        48,
+        49,
+        53,
+        54,
+        57,
+        74,
+        77,
+        94,
+        102,
+        114,
+        119,
+        125,
+        137,
+        208,
+        218,
+        227,
+        235
+      ]
+    },
+    "src/utils/Evaluator.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/utils/calendarUtils.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/utils/conditionOperators/ConditionOperator.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13,
+        17,
+        21
+      ]
+    },
+    "src/utils/conditionOperators/DateGreaterThan.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12,
+        20
+      ]
+    },
+    "src/utils/conditionOperators/DateGreaterThanOrEqual.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/DateLessThan.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/DateLessThanOrEqual.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/EndsWith.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/GreaterThan.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/GreaterThanOrEqual.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/Includes.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/IsDateEqual.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/IsEmptyValue.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13,
+        17,
+        28
+      ]
+    },
+    "src/utils/conditionOperators/IsNotDateEqual.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/IsNotEmptyValue.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/IsNotEqualTo.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/LessThan.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/LessThanOrEqual.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/NotIncludes.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        8,
+        12
+      ]
+    },
+    "src/utils/conditionOperators/StartsWith.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        9,
+        13
+      ]
+    },
+    "src/utils/conditionOperators/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        20
+      ]
+    },
+    "src/utils/formUtils.js": {
+      "expectCount": 17,
+      "actualCount": 15,
+      "undocumentLines": [
+        280,
+        316
+      ]
+    },
+    "src/utils/i18n.js": {
+      "expectCount": 13,
+      "actualCount": 1,
+      "undocumentLines": [
+        3,
+        14,
+        15,
+        16,
+        17,
+        22,
+        55,
+        59,
+        65,
+        69,
+        80,
+        84
+      ]
+    },
+    "src/utils/jsonlogic/operators.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/utils/utils.unit.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "src/validator/Rules.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        10,
+        14,
+        18
+      ]
+    },
+    "src/validator/conjunctions/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ]
+    },
+    "src/validator/operators/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ]
+    },
+    "src/validator/quickRules/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ]
+    },
+    "src/validator/rules/Custom.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Date.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Day.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Email.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/JSON.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Mask.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        8
+      ]
+    },
+    "src/validator/rules/Max.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/MaxDate.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        10
+      ]
+    },
+    "src/validator/rules/MaxLength.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/MaxWords.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/MaxYear.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Min.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/MinDate.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        8,
+        10
+      ]
+    },
+    "src/validator/rules/MinLength.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/MinWords.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/MinYear.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Pattern.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Required.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/rules/Rule.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ]
+    },
+    "src/validator/rules/Select.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        10,
+        11,
+        13
+      ]
+    },
+    "src/validator/rules/Time.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        5,
+        7
+      ]
+    },
+    "src/validator/rules/Unique.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        5,
+        6,
+        8
+      ]
+    },
+    "src/validator/rules/Url.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "src/validator/transformers/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ]
+    },
+    "src/validator/valueSources/index.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        2,
+        4,
+        8,
+        12,
+        16
+      ]
+    },
+    "src/widgets/InputWidget.js": {
+      "expectCount": 20,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        4,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        24,
+        28,
+        37,
+        41,
+        45,
+        49,
+        53,
+        57,
+        61,
+        65
+      ]
+    }
+  }
+}

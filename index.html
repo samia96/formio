@@ -1,0 +1,984 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/formio.full.css">
+  <script src='./dist/formio.full.js'></script>
+
+  <style>
+    .btn.builder-group-button {
+      font-size: 10px;
+      /* color: rgb(140, 137, 137); */
+      color: var(---bbbbbb);
+      text-align: left;
+      font: normal normal 600 12px/17px Source Sans Pro;
+      letter-spacing: 0px;
+      color: #BBBBBB;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+
+    .btn.builder-group-button[aria-controls="group-customTitre"] {
+      color: rgb(10, 10, 10);
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .btn.btn-outline-primary.btn-sm.formcomponent.drag-copy.m-0 {
+      color: rgb(84, 83, 83);
+      border: none;
+      border-bottom: 1px solid rgb(132, 131, 131);
+      border-radius: 0%;
+      /* font-family: normal normal bold 12px/17px Source Sans Pro; */
+      /* font-size: 12px; */
+      color: var(---808080);
+      text-align: left;
+      font: normal normal bold 12px/17px Source Sans Pro;
+      letter-spacing: 0px;
+      color: #808080;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+
+    .card.form-builder-panel.accordion-item {
+      border: none;
+
+    }
+
+    .card-header.form-builder-group-header {
+      background-color: white;
+      border-bottom: none;
+    }
+
+    .card-header {
+      background-color: #FFFFFF
+    }
+
+    .component-settings .nav>li>a {
+
+      color: var(---808080);
+      text-align: left;
+      font: normal normal bold 12px/17px Source Sans Pro;
+      letter-spacing: 0px;
+      color: #808080;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+
+    .card-header-tabs .nav-link.active {
+      color: #67ABDF;
+    }
+
+    label {
+      color: var(---808080);
+      font: normal normal 600 14px/20px Source Sans Pro;
+      letter-spacing: 0px;
+      color: #373737;
+      opacity: 1;
+    }
+
+    .accordion.builder-sidebar.builder-sidebar_scroll {
+      border-left: none;
+      border-right: none;
+
+    }
+
+    #group-customTitre {
+      display: none;
+      visibility: hidden;
+
+    }
+
+    .card.panel.preview-panel {
+      /* display: none; */
+    }
+
+    .col.col-sm-6 .float-end a {
+      display: none;
+    }
+
+    .formio.builder.row.formbuilder {
+      width: 100%;
+      overflow: hidden;
+      /* justify-content:space-between; */
+    }
+
+    .col-xs-4.col-sm-3.col-md-2.formcomponents {
+      width: 25%;
+      /* float: left; */
+      /* box-sizing: border-box; */
+      /* box-shadow: 2px 2px 2px 2px rgb(191, 190, 190); */
+      margin-top: 20px;
+      /* top: 235px; */
+      background: var(---ffffff) 0% 0% no-repeat padding-box;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      opacity: 1;
+
+    }
+
+    .col-xs-8.col-sm-9.col-md-10.formarea {
+      width: 55%;
+      position: relative;
+      box-sizing: border-box;
+      margin-top: 20px;
+
+    }
+
+
+
+    .drag-and-drop-alert.alert.alert-info.no-drag {
+      /* width: 880px; */
+      height: 248px;
+      /* background-color: white; */
+      display: grid;
+      border: none;
+      align-items: center;
+      text-align: center;
+      color: rgb(121, 121, 121);
+      /* box-shadow: 2px 2px 2px 2px rgb(191, 190, 190); */
+      /* // border-radius: 4px solid black; */
+      background: var(---ffffff) 0% 0% no-repeat padding-box;
+      border: 0.75px solid var(---e4e4e4);
+
+    }
+
+    .formio-component-label-hidden {
+      background: var(---ffffff) 0% 0% no-repeat padding-box;
+      border: 0.75px solid var(---e4e4e4);
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      /* box-shadow: 0px 3px 15px #0000000D; */
+      /* border: 0.75px solid #E4E4E4; */
+      border-radius: 5px;
+      opacity: 1;
+      padding: 20;
+    }
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-button.formio-component-submit.mb-2.formio-form-group {
+      display: none;
+    }
+
+    .fa.fa-question-sign.bi.bi-question-circle.text-muted {
+      display: none;
+    }
+
+    .card-header.bg-default {
+      /* display: none; */
+      background-color: white;
+    }
+
+    .form-control.ui.fluid.selection.dropdown {
+      /* float: right; */
+      /* width: 60%;*/
+      height: 40px;
+
+    }
+
+    .formio-component-conditional.eq [aria-labelledby="l-e3r3og-conditional.eq"] {
+      background-color: red;
+
+    }
+
+    .formio-form-group.has-feedback.formio-component-conditional.show .col-form-label {
+      background-color: red;
+    }
+
+    /* .formio-dialog-content[ref="dialogContents"]{
+      width: 50%;
+      background-color: red;
+    } */
+    .formio-dialog.formio-dialog-theme-default .formio-dialog-content {
+      max-width: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+
+
+    }
+
+    .formio-dialog-close.float-end.btn-sm {
+      display: inherit;
+    }
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-checkbox.formio-component-inline {
+      /* display: none; */
+    }
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-select.formio-component-optionsLabelPosition {
+      display: none;
+    }
+
+
+
+    /* .component-edit-container .row .col.col-sm-6:nth-child(2) {
+    background-color: red;
+    
+    width: 10%;
+} */
+    .list-group-item.list-group-header {
+      border: none;
+    }
+
+    .list-group-item.list-group-header .row .col-sm-6 {
+      display: none;
+    }
+
+    [ref="editgrid-logic-addRow"] {
+      background-color: #FFCB78;
+      color: white;
+      border: none;
+    }
+
+    [ref="editgrid-actions-addRow"] {
+      background-color: #808080;
+      color: white;
+      border: none;
+    }
+
+    /*[ref="editgrid-logic-saveRow"]{
+   display: none; 
+}
+[ref="editgrid-logic-cancelRow"]{
+  display: none;
+}
+[ref="editgrid-actions-saveRow"]{
+  display: none;
+}
+   
+[ref="editgrid-actions-cancelRow"]{
+  display: none;
+}*/
+
+    .col.component-edit-tabs.col-sm-6 {
+      /* width: 100%; */
+    }
+
+    .formio-dialog {
+      background: none;
+    }
+
+    #builder {
+      background-color: #F1F4F5;
+    }
+
+    .form-check.checkbox {
+      margin: auto
+    }
+
+    .form-check-label span {
+      color: #808080;
+      text-transform: uppercase;
+      font: normal normal bold 12px/17px Source Sans Pro;
+    }
+
+    .form-check-input:checked {
+      background-color: #47C431;
+      border-color: none;
+
+    }
+
+    [ ref="datagrid-values-addRow"] {
+      background-color: #808080;
+      border: none;
+    }
+
+    .form-check .form-check-input {
+      /* float: left; */
+
+    }
+
+    .ck.ck-dropdown.ck-toolbar__grouped-dropdown.ck-toolbar-dropdown {
+      display: none;
+    }
+
+    /* .form-check-input:checked + .slider{
+  background-color: #2196F3;
+}
+.form-check-input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.form-check-inpu:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+} */
+    /* .slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+} */
+
+    .formio-component-conditional.show {
+      background-color: #373737;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #ekk1x5e {
+      background-color: #373737;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    /* [ref="nested-simple-conditional"]{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+} */
+
+
+    .formio-component:not(:last-child)::after {
+      content: "";
+      display: block;
+      /* border-bottom: 1px solid #ccc; 
+  margin-bottom: 10px; */
+    }
+
+
+
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-radio.radio {
+      /* float: left;
+    height: 46px;
+    padding: 0 10px; */
+    }
+
+    /* 
+stars */
+
+    .form-radio.radio .radio.form-check-inline:not(:checked)>input {
+      position: absolute;
+      top: -9999px;
+    }
+
+    .form-radio.radio:not(:checked) .radio.form-check-inline>label {
+      float: right;
+      width: 3em;
+      height: 5em;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+      font-size: 25px;
+      color: #ccc !important;
+      padding: 10px 5px;
+
+    }
+
+    /* heart */
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingHeart .form-radio.radio .radio.form-check-inline:not(:checked)>label:before {
+      content: '❤';
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingHeart .form-radio.radio .radio.form-check-inline>input:checked~label {
+      color: #f55a5a;
+    }
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingFire .form-radio.radio .radio.form-check-inline:not(:checked)>label:before {
+      content: '🔥';
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingFire .form-radio.radio .radio.form-check-inline>input:checked~label > span  {
+      color: #47c431;;
+    }
+
+    /* emojis */
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--EXTREMELY DISSATISFIED"]:before {
+      content: '😠';
+      opacity: 0.5;
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--SOMEWHAT DISSATISFIED"]:before {
+      content: '😟';
+      opacity: 0.5;
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--NEUTRAL"]:before {
+      content: '😐';
+      opacity: 0.5;
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--SOMEWHAT SATISFIED"]:before {
+      content: '😊';
+      opacity: 0.5;
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--EXTREMELY SATISFIED"]:before {
+      content: '😄';
+      opacity: 0.5;
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--EXTREMELY DISSATISFIED"]:before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--SOMEWHAT DISSATISFIED"]:before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--NEUTRAL"]:before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--SOMEWHAT SATISFIED"]:before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--EXTREMELY SATISFIED"]:before
+     {
+      opacity: 1;
+      transform: rotate(45deg);
+    }
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingEmojis .form-radio.radio .radio.form-check-inline>input:checked~label > span {
+      color: #47c431;
+    }
+
+    /* number */
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--1"]:before {
+      content: '1';
+      background-color: #f3f3f3;
+      padding: 0.3rem 1rem!important;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+}
+     
+    
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--2"]:before {
+      content: '2';
+      background-color: #f3f3f3;
+      padding: 0.3rem 1rem!important;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      
+     
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--3"]:before {
+      content: '3';
+      background-color: #f3f3f3;
+      padding: 0.3rem 1rem!important;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+     
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--4"]:before {
+      content: '4';
+      background-color: #f3f3f3;
+      padding: 0.3rem 1rem!important;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+     
+    }
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline:not(:checked)  > label[for$="--5"]:before {
+      content: '5';
+      background-color: #f3f3f3;
+      padding: 0.3rem 1rem!important;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      cursor: pointer;
+     
+    }
+    /* active */
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--1"]::before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--2"]::before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--3"]::before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--4"]::before,
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-radio.formio-component-ratingNumber .form-radio.radio .radio.form-check-inline>input:checked ~ label[for$="--5"]::before {
+  background-color: #47c431;
+  color: black;
+}
+
+   
+    /* star */
+    .form-radio.radio .radio.form-check-inline:not(:checked)>label:before {
+      content: '★ ';
+
+    }
+
+    .form-radio.radio .radio.form-check-inline>input:checked~label {
+      color: #ffc700;
+    }
+
+    .form-radio.radio:not(:checked)>.radio.form-check-inline>label:hover,
+    .form-radio.radio:not(:checked)>.radio.form-check-inline>label:hover~label {
+      color: #deb217;
+    }
+
+    .form-radio.radio>input:checked+label:hover,
+    .form-radio.radio>input:checked+label:hover~label,
+    .form-radio.radio>label:hover~input:checked~label {
+      color: #c59b08;
+    }
+
+
+    .form-radio.radio .radio.form-check-inline>label>span {
+      color: #808080;
+      bottom: 2;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-right: 15rem;
+      display: block;
+      text-transform: lowercase;
+      font-size: 11px;
+      text-align: center;
+      padding-top: 24px;
+      word-break: break-word;
+
+    }
+
+    .mb-2.formio-form-group.has-feedback.formio-component.formio-component-select.formio-component-widget{
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id='builder'></div>
+  <script type='text/javascript'>
+
+
+    Formio.builder(document.getElementById('builder'), {}, {
+      builder: {
+        customTitre:
+        {
+          title: 'Question types',
+          default: true,
+
+        },
+        customChoice:
+        {
+          title: 'CHOICES',
+          default: true,
+          weight: 10,
+          components:
+          {
+          
+            yesNoQuestion: {
+              title: 'YES or NO',
+              key: 'yesNoQuestion',
+              icon: 'toggle-on',
+              schema: {
+                label: 'YES or NO',
+                type: 'radio',
+                key: 'yesNoQuestion',
+                input: true,
+                values: [
+                  { label: 'YES', value: 'yes', shortcut: "" },
+                  { label: 'NO', value: 'no', shortcut: "" }
+                ]
+              }
+            },
+
+            dropdownQuestion: {
+              "autofocus": false,
+              "input": true,
+              "tableView": true,
+              "label": "Dropdown",
+              "key": "select",
+              "placeholder": "",
+              "data": {
+                "values": [
+                  {
+                    "value": "one",
+                    "label": "One"
+                  },
+                  {
+                    "value": "two",
+                    "label": "Two"
+                  },
+                  {
+                    "value": "three",
+                    "label": "Three"
+                  }
+                ],
+                "json": "",
+                "url": "",
+                "resource": "",
+                "custom": ""
+              },
+              "dataSrc": "values",
+              "valueProperty": "",
+              "defaultValue": "",
+              "refreshOn": "",
+              "filter": "",
+              "authenticate": false,
+              "template": "<span>{{ item.label }}</span>",
+              "multiple": false,
+              "protected": false,
+              "unique": false,
+              "persistent": true,
+              "hidden": false,
+              "clearOnHide": true,
+              "validate": {
+                "required": false
+              },
+              "type": "select",
+              "labelPosition": "top",
+              "tags": [],
+              "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+              },
+              "properties": {}
+
+            },
+            checkboxQuestion: {
+              title: 'Checkbox',
+              key: 'checkboxQuestion',
+              icon: 'check-square',
+              schema: {
+                label: 'Checkbox',
+                type: 'checkbox',
+                key: 'checkboxQuestion',
+                input: true
+              }
+            },
+          },
+        },
+
+        customMultipleChoice:
+        {
+          title: 'MULTIPLE CHOICES',
+          default: true,
+          weight: 10,
+          components:
+          {
+            multipleChoice: {
+              title: 'MULTIPLE CHOICES',
+              key: 'multipleChoice',
+              icon: 'hand-thumbs-up',
+              schema: {
+                label: 'MULTIPLE CHOICES',
+                type: 'selectboxes',
+                inputType: 'checkbox',
+                tableView: true,
+                input: true,
+
+              }
+            },
+
+            singleChoice: {
+              title: 'Single choice',
+              icon: 'toggle-on',
+              schema: {
+                label: 'single',
+                type: 'radio',
+                key: 'singleChoice',
+                input: true,
+               
+              }
+            },
+
+            dropdownQuestion: {
+         label: "Dropdown",
+         title:"Dropdown",
+         icon: 'check2',
+         widget: "choicesjs",
+         tableView: true,
+         schema: {
+         key: "dropdown",
+         type: "select",
+         input: true
+         }
+        },
+            
+          },
+        },
+        
+        customRating: {
+          title: 'RANKONG',
+          default: true,
+          weight: 10,
+          components:
+          {
+
+
+            matrixQuestion: {
+              title: 'MATRIX',
+              key: 'matrixQuestion',
+              icon: 'table',
+              schema: {
+                label: 'MATRIX',
+                type: 'number',
+                key: 'matrixQuestion',
+                input: true,
+                values: [
+                  { label: 'Option 1', value: 'option1' },
+                  { label: 'Option 2', value: 'option2' },
+                  { label: 'Option 3', value: 'option3' }
+                ],
+                rowTitles: ['Row 1', 'Row 2', 'Row 3']
+              }
+            },
+            likertScaleQuestion: {
+              title: 'LIKERT SCALE',
+              key: 'likertScaleQuestion',
+              icon: 'list-ol',
+              className: 'likert-horizontal',
+              schema: {
+                label: 'LIKERT SCALE',
+                type: 'select',
+                key: 'likertScaleQuestion',
+                input: true,
+
+                data: {
+                  values: [
+                    { label: 'Strongly Agree', value: 'agree5' },
+                    { label: 'Agree', value: 'agree4' },
+                    { label: 'Neutral', value: 'neutral' },
+                    { label: 'Disagree', value: 'disagree2' },
+                    { label: 'Strongly Disagree', value: 'disagree1' }
+                  ]
+                }
+              }
+            },
+            npsQuestion: {
+              title: 'NPS (NET PROMOTEUR SCORE)',
+              key: 'npsQuestion',
+              icon: 'chart-bar',
+              schema: {
+                label: 'NPS (NET PROMOTEUR SCORE)',
+                type: 'number',
+                key: 'npsQuestion',
+                input: true,
+                inputType: 'range',
+                validate: {
+                  min: 0,
+                  max: 10
+                }
+              }
+            },
+
+          },
+
+        },
+
+
+        Rating: {
+          title: 'RATING',
+          default: true,
+          weight: 10,
+          components:
+          {
+
+
+            ratingStar: {
+              title: 'Rating star',
+              icon: 'star',
+              schema: {
+                label: 'Rating Star',
+                type: 'radio',
+                key: 'ratingStart',
+                input: true,
+                inputType: "radio",
+                tableView: true,
+                inline: true,
+
+
+                values: [
+                  { label: "1 star", value: "1" },
+                  { label: "2 stars", value: "2" },
+                  { label: "3 stars", value: "3" },
+                  { label: "4 stars", value: "4" },
+                  { label: "5 stars", value: "5" }
+                ]
+
+              },
+            },
+            ratingHeart: {
+              title: 'Rating Heart',
+              icon: 'heart',
+              schema: {
+                label: 'Rating Heart',
+                type: 'radio',
+                key: 'ratingHeart',
+                input: true,
+                inputType: "radio",
+                tableView: true,
+                inline: true,
+
+                values: [
+                  { label: "1 heart", value: "1" },
+                  { label: "2 hearts", value: "2" },
+                  { label: "3 hearts", value: "3" },
+                  { label: "4 hearts", value: "4" },
+                  { label: "5 hearts", value: "5" }
+                ]
+
+              },
+            },
+
+            ratingFire: {
+              title: 'Rating Fire',
+              icon: 'fire',
+              schema: {
+                label: 'Rating Fire',
+                type: 'radio',
+                key: 'ratingFire',
+                input: true,
+                inputType: "radio",
+                tableView: true,
+                inline: true,
+
+                values: [
+                  { label: "1 fire", value: "1" },
+                  { label: "2 fires", value: "2" },
+                  { label: "3 fires", value: "3" },
+                  { label: "4 fires", value: "4" },
+                  { label: "5 fires", value: "5" }
+                ]
+
+              },
+            },
+            ratingNumber: {
+              title: 'Rating Number',
+              icon: '0-square-fill',
+              schema: {
+                label: 'Rating Number',
+                type: 'radio',
+                key: 'ratingNumber',
+                input: true,
+                inputType: "radio",
+                tableView: true,
+                inline: true,
+
+                values: [
+                  { label: "ONE", value: "1" },
+                  { label: "TWO", value: "2" },
+                  { label: "THREE", value: "3" },
+                  { label: "FOR", value: "4" },
+                  { label: "FIVE", value: "5" }
+                ]
+
+              },
+            },
+            ratingEmojis: {
+              title: 'Rating Emojis',
+              icon: 'emoji-laughing-fill',
+              schema: {
+                label: 'Rating Emojis',
+                type: 'radio',
+                key: 'ratingEmojis',
+                input: true,
+                inputType: "radio",
+                tableView: true,
+                inline: true,
+
+                values: [
+                  { label: " EXTREMELY  <br> DISSATISFIED", value: "EXTREMELY DISSATISFIED" },
+                  { label: "SOMEWHAT <br>  DISSATISFIED", value: "SOMEWHAT DISSATISFIED" },
+                  { label: "NEUTRAL", value: "NEUTRAL" },
+                  { label: "SOMEWHAT  <br>  SATISFIED", value: "SOMEWHAT SATISFIED" },
+                  { label: "EXTREMELY <br> SATISFIED", value: "EXTREMELY SATISFIED" }
+                ]
+
+              },
+            },
+
+
+
+          },
+
+        },
+        customText: {
+          title: 'TEXT',
+          weight: 10,
+          default: true,
+          components: {
+            firstName: {
+              title: 'OPEN TEXT',
+              key: 'openText',
+              icon: 'terminal',
+              schema: {
+                label: 'OPEN TEXT',
+                type: 'textfield',
+                key: 'openText',
+                input: true
+              }
+            },
+
+
+
+          }
+        },
+        customFile: {
+          title: 'FILE UPLOAD',
+          weight: 10,
+          default: true,
+          components: {
+            fileImage: {
+              title: 'IMAGE UPLOAD',
+              icon: 'file',
+              type: "image",
+              label: "IMAGE UPLOAD",
+              key: "image",
+              input: true,
+              schema: {
+                label: "IMAGE UPLOAD",
+                type: "file",
+                key: "image",
+                accept: ["image/jpeg", "image/png", "image/gif"],
+                maxSize: 1000000
+              }
+            },
+            fileI: {
+              title: 'FILE UPLOAD',
+              icon: 'file',
+              type: "image",
+              label: "FILE UPLOAD",
+              key: "image",
+              input: true,
+              schema: {
+                label: "FILE UPLOAD",
+                type: "file",
+                key: "image",
+                accept: ["audio/*", "video/*", "application/pdf"],
+                maxSize: 1000000
+              }
+            },
+          }
+        },
+
+
+
+      }
+    }).then(function (builder) {
+      builder.on('saveComponent', function () {
+        console.log(builder.schema);
+      });
+    });
+
+  </script>
+
+
+  <script>
+    const radioGroup = document.querySelector(".form-radio.radio");
+    radioGroup.style.background = 'red'
+    const wrappers = radioGroup.querySelectorAll(".radio.form-check-inline");
+
+    for (let i = 0; i < wrappers.length; i++) {
+
+      wrappers[i].style.color = 'red'
+      wrappers[i].style.background = 'red'
+    }
+    console.log(wrappers);
+  </script>
+
+
+</body>
+
+
+</html>
