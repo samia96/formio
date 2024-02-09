@@ -1,5 +1,5 @@
 {
-  "name": "@formio/js",
+  "name": "@samia96/formio",
   "version": "5.0.0",
   "description": "JavaScript powered Forms with JSON Form Builder",
   "main": "lib/cjs/index.js && dist/index.js",
@@ -72,10 +72,7 @@
     "url": "git+https://github.com/samia96/formio.git"
   },
   "contributors": [
-    {
-      "name": "Form.io Open Source Community",
-      "url": "https://github.com/formio/formio.js/graphs/contributors"
-    }
+    "Form.io Open Source Community (https://github.com/formio/formio.js/graphs/contributors)"
   ],
   "bugs": {
     "url": "https://github.com/formio/formio.js/issues"
@@ -192,7 +189,12 @@
   "engines": {
     "node": ">=8"
   },
- "publishConfig": {
-  "@samia96:registry": "https://npm.pkg.github.com"
-}
+  "publishConfig": {
+    "@samia96:registry": "https://npm.pkg.github.com"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  }
 }
