@@ -1,0 +1,1 @@
+{"version":3,"file":"comp6.js","sourceRoot":"","sources":["../../../../src/components/selectboxes/fixtures/comp6.js"],"names":[],"mappings":";;AAAA,kBAAe;IACX,KAAK,EAAE,cAAc;IACrB,OAAO,EAAE,KAAK;IACd,IAAI,EAAE;QACF,GAAG,EAAE,mEAAmE;KAC3E;IACD,aAAa,EAAE,cAAc;IAC7B,QAAQ,EAAE,8BAA8B;IACxC,GAAG,EAAE,aAAa;IAClB,IAAI,EAAE,aAAa;IACnB,KAAK,EAAE,IAAI;IACX,SAAS,EAAE,UAAU;CACxB,CAAC"}

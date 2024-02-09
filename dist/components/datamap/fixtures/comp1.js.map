@@ -1,0 +1,1 @@
+{"version":3,"file":"comp1.js","sourceRoot":"","sources":["../../../../src/components/datamap/fixtures/comp1.js"],"names":[],"mappings":";;AAAA,kBAAe;IACb,IAAI,EAAE,SAAS;IACf,GAAG,EAAE,YAAY;IACjB,KAAK,EAAE,YAAY;IACnB,KAAK,EAAE,IAAI;IACX,cAAc,EAAE;QACd,IAAI,EAAE,WAAW;QACjB,GAAG,EAAE,OAAO;QACZ,KAAK,EAAE,OAAO;QACd,YAAY,EAAE,OAAO;QACrB,KAAK,EAAE,IAAI;KACZ;CACF,CAAC"}
